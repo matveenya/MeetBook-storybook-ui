@@ -31,11 +31,11 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
-import InputText from 'primevue/inputtext';
-import Password from 'primevue/password';
-import IconField from 'primevue/iconfield';
-import InputIcon from 'primevue/inputicon';
+import { computed } from "vue";
+import InputText from "primevue/inputtext";
+import Password from "primevue/password";
+import IconField from "primevue/iconfield";
+import InputIcon from "primevue/inputicon";
 
 interface Props {
   type?: string;
@@ -47,10 +47,10 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  type: 'text',
-  placeholder: '',
-  icon: '',
-  error: '',
+  type: "text",
+  placeholder: "",
+  icon: "",
+  error: "",
   toggleMask: true,
   feedback: false,
 });
@@ -59,6 +59,6 @@ const modelValue = defineModel<string | null>();
 
 const inputClasses = computed(
   () =>
-    'w-full! py-3! border! border-gray-300! rounded-xl! focus:outline-none! focus:ring-2! focus:ring-[#3f4bb0]! focus:border-transparent! transition!'
+    "w-full! py-3! border! border-gray-300! rounded-xl! focus:outline-none! focus:ring-2! focus:ring-[#3f4bb0]! focus:border-transparent! transition!",
 );
 </script>

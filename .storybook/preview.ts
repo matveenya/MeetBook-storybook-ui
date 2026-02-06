@@ -1,16 +1,16 @@
-import { setup } from '@storybook/vue3-vite';
-import type { Preview } from '@storybook/vue3-vite'; 
-import PrimeVue from 'primevue/config';
-import Aura from '@primevue/themes/aura';
-import '../src/style.css';
-import 'primeicons/primeicons.css';
+import { setup } from "@storybook/vue3-vite";
+import type { Preview } from "@storybook/vue3-vite";
+import PrimeVue from "primevue/config";
+import Aura from "@primevue/themes/aura";
+import "../src/style.css";
+import "primeicons/primeicons.css";
 
 setup((app) => {
   app.use(PrimeVue, {
     theme: {
       preset: Aura,
       options: {
-        darkModeSelector: '.dark-mode-only',
+        darkModeSelector: ".dark-mode-only",
       },
     },
   });
@@ -25,8 +25,8 @@ const preview: Preview = {
       },
     },
     a11y: {
-      test: 'todo'
-    }
+      test: "todo",
+    },
   },
 };
 

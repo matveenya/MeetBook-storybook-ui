@@ -1,20 +1,20 @@
-import type { Meta, StoryObj } from '@storybook/vue3-vite'; 
-import Button from '../../components/ui/Button.vue';
+import type { Meta, StoryObj } from "@storybook/vue3-vite";
+import Button from "../../components/ui/Button.vue";
 
 const meta: Meta<typeof Button> = {
-  title: 'UI/Button',
+  title: "UI/Button",
   component: Button,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     variant: {
-      control: 'select',
-      options: ['primary', 'outlined', 'icon', 'danger', 'tab'],
+      control: "select",
+      options: ["primary", "outlined", "icon", "danger", "tab"],
     },
-    fluid: { control: 'boolean' },
+    fluid: { control: "boolean" },
   },
   args: {
-    label: 'Button',
-    variant: 'primary',
+    label: "Button",
+    variant: "primary",
     fluid: true,
   },
 };
@@ -24,36 +24,36 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: 'Primary Button',
-    variant: 'primary',
+    label: "Primary Button",
+    variant: "primary",
   },
 };
 
 export const Outlined: Story = {
   args: {
-    label: 'Outlined Button',
-    variant: 'outlined',
+    label: "Outlined Button",
+    variant: "outlined",
   },
 };
 
 export const Danger: Story = {
   args: {
-    label: 'Delete Item',
-    variant: 'danger',
+    label: "Delete Item",
+    variant: "danger",
   },
 };
 
 export const Tab: Story = {
   args: {
-    label: 'Tab Menu Item',
-    variant: 'tab',
+    label: "Tab Menu Item",
+    variant: "tab",
     fluid: false,
   },
 };
 
 export const Icon: Story = {
   args: {
-    variant: 'icon',
+    variant: "icon",
   },
   render: (args: any) => ({
     components: { Button },

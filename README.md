@@ -1,5 +1,34 @@
-# Vue 3 + TypeScript + Vite
+# MeetBook Storybook UI
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A specialized UI Kit for the **MeetBook** project, built with **Vue 3**, **PrimeVue**, and **Tailwind CSS**. This library uses **Storybook** for isolated component development, documentation, and testing.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🚀 Tech Stack
+
+* **Framework:** [Vue 3](https://vuejs.org/) (Composition API with `<script setup>`).
+* **Build Tool:** [Vite](https://vitejs.dev/).
+* **Language:** [TypeScript](https://www.typescriptlang.org/).
+* **Styling:** [Tailwind CSS 4](https://tailwindcss.com/).
+* **UI Components:** [PrimeVue 4](https://primevue.org/) with **Aura** theme.
+* **Documentation:** [Storybook 10](https://storybook.js.org/).
+
+## 📦 Key Components
+
+Components are logically organized and exported via `src/index.ts`:
+
+### UI (Atomic)
+* **Button**: A highly customizable button supporting multiple variants: `primary`, `outlined`, `icon`, `danger`, and `tab`.
+* **Input**: Comprehensive input fields including text and password types with built-in validation states and icon support.
+* **SidebarItem**: Navigation components designed for dashboard sidebars.
+
+### Layout & Auth
+* **Header**: Main dashboard header featuring user profile information and logout functionality.
+* **DashboardTabs**: A navigation bar for switching between different dashboard views (e.g., Calendar, History).
+* **OrBlockAuth**: A stylized separator for authentication forms.
+
+## 🛠 Development Commands
+
+This project uses `pnpm` as the package manager.
+
+### Install Dependencies
+```bash
+pnpm install
